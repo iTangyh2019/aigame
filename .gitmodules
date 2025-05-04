@@ -1,0 +1,3 @@
+[submodule "tap4-ai-webui"]
+	path = tap4-ai-webui
+	url = https://github.com/6677-ai/tap4-ai-webui.git
