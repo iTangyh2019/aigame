@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#004D40"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="450" fill="url(#bgGradient)"/>
+  
+  <!-- 背景纹理 -->
+  <g opacity="0.1">
+    <!-- 交叉线条 -->
+    <path d="M0,0 L800,450" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M800,0 L0,450" stroke="#FFFFFF" stroke-width="1"/>
+    
+    <!-- 水平线 -->
+    <path d="M0,75 L800,75" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M0,150 L800,150" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M0,225 L800,225" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M0,300 L800,300" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M0,375 L800,375" stroke="#FFFFFF" stroke-width="1"/>
+    
+    <!-- 垂直线 -->
+    <path d="M100,0 L100,450" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M200,0 L200,450" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M300,0 L300,450" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M400,0 L400,450" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M500,0 L500,450" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M600,0 L600,450" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M700,0 L700,450" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+  
+  <!-- 中央圆形图标区域 -->
+  <g>
+    <circle cx="400" cy="225" r="130" fill="rgba(0,0,0,0.3)" stroke="#4CAF50" stroke-width="3" stroke-dasharray="10,5"/>
+    
+    <!-- 生存元素图标 -->
+    <g filter="url(#shadow)">
+      <!-- 火焰图标 -->
+      <g transform="translate(400, 155)">
+        <circle cx="0" cy="0" r="35" fill="#FF9800" opacity="0.9"/>
+        <path d="M0,-20 C10,-15 20,-25 15,-5 C25,10 5,25 0,20 C-5,25 -25,10 -15,-5 C-20,-25 -10,-15 0,-20" fill="#FF5722" stroke="#FFC107" stroke-width="2"/>
+        <text x="0" y="45" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">火</text>
+      </g>
+      
+      <!-- 水图标 -->
+      <g transform="translate(330, 225)">
+        <circle cx="0" cy="0" r="30" fill="#2196F3" opacity="0.9"/>
+        <path d="M0,-15 C15,-5 15,15 0,15 C-15,15 -15,-5 0,-15" fill="#64B5F6" stroke="#0D47A1" stroke-width="1.5"/>
+        <text x="0" y="40" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">水</text>
+      </g>
+      
+      <!-- 食物图标 -->
+      <g transform="translate(470, 225)">
+        <circle cx="0" cy="0" r="30" fill="#8BC34A" opacity="0.9"/>
+        <path d="M-10,-5 L10,-5 L10,5 L-10,5 Z" fill="#33691E" stroke="#DCEDC8" stroke-width="1"/>
+        <path d="M-5,-10 L-5,10 M0,-10 L0,10 M5,-10 L5,10" stroke="#33691E" stroke-width="3"/>
+        <text x="0" y="40" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">食</text>
+      </g>
+      
+      <!-- 避难所图标 -->
+      <g transform="translate(400, 295)">
+        <circle cx="0" cy="0" r="35" fill="#795548" opacity="0.9"/>
+        <path d="M-20,-10 L0,-25 L20,-10 L20,15 L-20,15 Z" fill="#5D4037" stroke="#D7CCC8" stroke-width="1.5"/>
+        <path d="M-5,15 L-5,0 L5,0 L5,15" fill="#D7CCC8" stroke="#3E2723" stroke-width="1"/>
+        <text x="0" y="45" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">避</text>
+      </g>
+    </g>
+    
+    <!-- 连接线 -->
+    <g stroke="#FFFFFF" stroke-width="1" stroke-dasharray="3,2" opacity="0.5">
+      <path d="M400,155 L330,225"/>
+      <path d="M400,155 L470,225"/>
+      <path d="M330,225 L400,295"/>
+      <path d="M470,225 L400,295"/>
+    </g>
+  </g>
+  
+  <!-- 生存技巧图标 -->
+  <g>
+    <!-- 指南针 -->
+    <g transform="translate(150, 150)">
+      <circle cx="0" cy="0" r="50" fill="rgba(0,0,0,0.3)" stroke="#FFFFFF" stroke-width="2"/>
+      <circle cx="0" cy="0" r="45" fill="none" stroke="#FFFFFF" stroke-width="1" opacity="0.5"/>
+      <path d="M0,-40 L0,40 M-40,0 L40,0" stroke="#FFFFFF" stroke-width="1" opacity="0.7"/>
+      <path d="M0,-30 L5,-5 L0,0 L-5,-5 Z" fill="#F44336" stroke="#FFFFFF" stroke-width="1"/>
+      <path d="M0,0 L5,5 L0,30 L-5,5 Z" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1"/>
+      <text x="0" y="65" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">定向</text>
+    </g>
+    
+    <!-- 工具包 -->
+    <g transform="translate(650, 150)">
+      <rect x="-35" y="-25" width="70" height="50" rx="5" fill="#607D8B" stroke="#FFFFFF" stroke-width="2"/>
+      <rect x="-35" y="-35" width="70" height="10" rx="2" fill="#455A64" stroke="#FFFFFF" stroke-width="1"/>
+      <path d="M-15,-25 L-15,25 M0,-25 L0,25 M15,-25 L15,25" stroke="#455A64" stroke-width="4" opacity="0.5"/>
+      <circle cx="-20" cy="-30" r="3" fill="#FFFFFF"/>
+      <circle cx="20" cy="-30" r="3" fill="#FFFFFF"/>
+      <text x="0" y="45" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">装备</text>
+    </g>
+    
+    <!-- 医疗包 -->
+    <g transform="translate(150, 325)">
+      <rect x="-30" y="-30" width="60" height="60" rx="5" fill="#F44336" stroke="#FFFFFF" stroke-width="2"/>
+      <path d="M-20,0 L20,0 M0,-20 L0,20" stroke="#FFFFFF" stroke-width="6"/>
+      <text x="0" y="45" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">急救</text>
+    </g>
+    
+    <!-- 信号发射器 -->
+    <g transform="translate(650, 325)">
+      <circle cx="0" cy="0" r="30" fill="#FFC107" stroke="#FFFFFF" stroke-width="2"/>
+      <path d="M0,-25 L0,25" stroke="#FFFFFF" stroke-width="3"/>
+      <path d="M-15,-20 C-10,-10 10,-10 15,-20" stroke="#FFFFFF" stroke-width="2" opacity="0.7"/>
+      <path d="M-25,-10 C-15,5 15,5 25,-10" stroke="#FFFFFF" stroke-width="2" opacity="0.5"/>
+      <path d="M-35,0 C-20,20 20,20 35,0" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+      <text x="0" y="45" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">通信</text>
+    </g>
+  </g>
+  
+  <!-- 标题 -->
+  <g fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="bold">
+    <text x="400" y="70" font-size="40" text-anchor="middle">求生技巧详解</text>
+    <text x="400" y="115" font-size="24" text-anchor="middle" fill="#8BC34A">SURVIVAL TACTICS GUIDE</text>
+    <text x="400" y="380" font-size="18" text-anchor="middle" opacity="0.8">荒野求生必备：从基础到精通的生存指南</text>
+  </g>
+</svg> 

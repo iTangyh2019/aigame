@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1A2D"/>
+      <stop offset="100%" stop-color="#3C2B57"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="450" fill="url(#bgGradient)" rx="10" ry="10"/>
+  
+  <!-- 装饰元素 - 地图网格 -->
+  <g opacity="0.1">
+    <path d="M0,50 L800,50" stroke="#FFF" stroke-width="1"/>
+    <path d="M0,100 L800,100" stroke="#FFF" stroke-width="1"/>
+    <path d="M0,150 L800,150" stroke="#FFF" stroke-width="1"/>
+    <path d="M0,200 L800,200" stroke="#FFF" stroke-width="1"/>
+    <path d="M0,250 L800,250" stroke="#FFF" stroke-width="1"/>
+    <path d="M0,300 L800,300" stroke="#FFF" stroke-width="1"/>
+    <path d="M0,350 L800,350" stroke="#FFF" stroke-width="1"/>
+    <path d="M0,400 L800,400" stroke="#FFF" stroke-width="1"/>
+    
+    <path d="M50,0 L50,450" stroke="#FFF" stroke-width="1"/>
+    <path d="M150,0 L150,450" stroke="#FFF" stroke-width="1"/>
+    <path d="M250,0 L250,450" stroke="#FFF" stroke-width="1"/>
+    <path d="M350,0 L350,450" stroke="#FFF" stroke-width="1"/>
+    <path d="M450,0 L450,450" stroke="#FFF" stroke-width="1"/>
+    <path d="M550,0 L550,450" stroke="#FFF" stroke-width="1"/>
+    <path d="M650,0 L650,450" stroke="#FFF" stroke-width="1"/>
+    <path d="M750,0 L750,450" stroke="#FFF" stroke-width="1"/>
+  </g>
+  
+  <!-- 中心图形 - 战术地图区域 -->
+  <g transform="translate(400, 225)">
+    <!-- 外圈边界 - 战场 -->
+    <circle cx="0" cy="0" r="150" fill="none" stroke="#FF5E5B" stroke-width="5" stroke-dasharray="10,5" opacity="0.7"/>
+    
+    <!-- 内部战术区域 -->
+    <g filter="url(#shadow)">
+      <!-- 安全区 -->
+      <circle cx="0" cy="0" r="110" fill="none" stroke="#5BFFBA" stroke-width="4" opacity="0.8"/>
+      
+      <!-- 战场标记点 -->
+      <circle cx="-70" cy="-40" r="15" fill="#FF5E5B" opacity="0.7"/>
+      <circle cx="60" cy="-60" r="18" fill="#FF5E5B" opacity="0.7"/>
+      <circle cx="40" cy="80" r="12" fill="#FF5E5B" opacity="0.7"/>
+      <circle cx="-50" cy="60" r="10" fill="#FF5E5B" opacity="0.7"/>
+      
+      <!-- 战术线路 -->
+      <path d="M-70,-40 L60,-60 L40,80 L-50,60 Z" fill="none" stroke="#5BFFBA" stroke-width="2" stroke-dasharray="5,3"/>
+      
+      <!-- 中心点 -->
+      <circle cx="0" cy="0" r="25" fill="#FF934F"/>
+      <circle cx="0" cy="0" r="15" fill="#5BFFBA"/>
+      <circle cx="0" cy="0" r="5" fill="#FFFFFF"/>
+    </g>
+    
+    <!-- 装饰性箭头 -->
+    <g opacity="0.6">
+      <!-- 上方箭头 -->
+      <path d="M0,-140 L-15,-110 L0,-120 L15,-110 Z" fill="#FF934F"/>
+      
+      <!-- 右方箭头 -->
+      <path d="M140,0 L110,-15 L120,0 L110,15 Z" fill="#FF934F"/>
+      
+      <!-- 下方箭头 -->
+      <path d="M0,140 L15,110 L0,120 L-15,110 Z" fill="#FF934F"/>
+      
+      <!-- 左方箭头 -->
+      <path d="M-140,0 L-110,15 L-120,0 L-110,-15 Z" fill="#FF934F"/>
+    </g>
+  </g>
+  
+  <!-- 文字 -->
+  <g fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="bold">
+    <text x="400" y="70" font-size="38" text-anchor="middle" fill="#FF934F">MASTER STRATEGIES FOR</text>
+    <text x="400" y="120" font-size="50" text-anchor="middle">BATTLE ROYALE</text>
+    <text x="400" y="380" font-size="22" text-anchor="middle" opacity="0.8" fill="#AAAAAA">Tactical Approaches To Be The Last One Standing</text>
+  </g>
+</svg> 

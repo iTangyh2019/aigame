@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A237E"/>
+      <stop offset="100%" stop-color="#0D47A1"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="450" fill="url(#bgGradient)"/>
+  
+  <!-- 网格背景 -->
+  <g opacity="0.1">
+    <path d="M0,0 L800,450 M800,0 L0,450" stroke="#FFFFFF" stroke-width="1"/>
+    
+    <!-- 水平线 -->
+    <path d="M0,75 L800,75 M0,150 L800,150 M0,225 L800,225 M0,300 L800,300 M0,375 L800,375" stroke="#FFFFFF" stroke-width="1"/>
+    
+    <!-- 垂直线 -->
+    <path d="M100,0 L100,450 M200,0 L200,450 M300,0 L300,450 M400,0 L400,450 M500,0 L500,450 M600,0 L600,450 M700,0 L700,450" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+  
+  <!-- 主中心齿轮系统 -->
+  <g transform="translate(400, 225)">
+    <!-- 大齿轮 -->
+    <g transform="rotate(15)">
+      <circle cx="0" cy="0" r="120" fill="rgba(255,255,255,0.05)" stroke="#64B5F6" stroke-width="3"/>
+      
+      <!-- 大齿轮齿 -->
+      <g>
+        <path d="M0,-140 L15,-130 L15,-110 L0,-100 L-15,-110 L-15,-130 Z" fill="#64B5F6" transform="rotate(0)"/>
+        <path d="M0,-140 L15,-130 L15,-110 L0,-100 L-15,-110 L-15,-130 Z" fill="#64B5F6" transform="rotate(40)"/>
+        <path d="M0,-140 L15,-130 L15,-110 L0,-100 L-15,-110 L-15,-130 Z" fill="#64B5F6" transform="rotate(80)"/>
+        <path d="M0,-140 L15,-130 L15,-110 L0,-100 L-15,-110 L-15,-130 Z" fill="#64B5F6" transform="rotate(120)"/>
+        <path d="M0,-140 L15,-130 L15,-110 L0,-100 L-15,-110 L-15,-130 Z" fill="#64B5F6" transform="rotate(160)"/>
+        <path d="M0,-140 L15,-130 L15,-110 L0,-100 L-15,-110 L-15,-130 Z" fill="#64B5F6" transform="rotate(200)"/>
+        <path d="M0,-140 L15,-130 L15,-110 L0,-100 L-15,-110 L-15,-130 Z" fill="#64B5F6" transform="rotate(240)"/>
+        <path d="M0,-140 L15,-130 L15,-110 L0,-100 L-15,-110 L-15,-130 Z" fill="#64B5F6" transform="rotate(280)"/>
+        <path d="M0,-140 L15,-130 L15,-110 L0,-100 L-15,-110 L-15,-130 Z" fill="#64B5F6" transform="rotate(320)"/>
+      </g>
+    </g>
+    
+    <!-- 中间齿轮 -->
+    <g transform="rotate(45)">
+      <circle cx="0" cy="0" r="80" fill="rgba(255,255,255,0.1)" stroke="#42A5F5" stroke-width="2"/>
+      
+      <!-- 中齿轮齿 -->
+      <g>
+        <path d="M0,-95 L10,-85 L10,-75 L0,-65 L-10,-75 L-10,-85 Z" fill="#42A5F5" transform="rotate(0)"/>
+        <path d="M0,-95 L10,-85 L10,-75 L0,-65 L-10,-75 L-10,-85 Z" fill="#42A5F5" transform="rotate(40)"/>
+        <path d="M0,-95 L10,-85 L10,-75 L0,-65 L-10,-75 L-10,-85 Z" fill="#42A5F5" transform="rotate(80)"/>
+        <path d="M0,-95 L10,-85 L10,-75 L0,-65 L-10,-75 L-10,-85 Z" fill="#42A5F5" transform="rotate(120)"/>
+        <path d="M0,-95 L10,-85 L10,-75 L0,-65 L-10,-75 L-10,-85 Z" fill="#42A5F5" transform="rotate(160)"/>
+        <path d="M0,-95 L10,-85 L10,-75 L0,-65 L-10,-75 L-10,-85 Z" fill="#42A5F5" transform="rotate(200)"/>
+        <path d="M0,-95 L10,-85 L10,-75 L0,-65 L-10,-75 L-10,-85 Z" fill="#42A5F5" transform="rotate(240)"/>
+        <path d="M0,-95 L10,-85 L10,-75 L0,-65 L-10,-75 L-10,-85 Z" fill="#42A5F5" transform="rotate(280)"/>
+        <path d="M0,-95 L10,-85 L10,-75 L0,-65 L-10,-75 L-10,-85 Z" fill="#42A5F5" transform="rotate(320)"/>
+      </g>
+    </g>
+    
+    <!-- 小齿轮 -->
+    <g transform="rotate(30)">
+      <circle cx="0" cy="0" r="40" fill="rgba(255,255,255,0.15)" stroke="#2196F3" stroke-width="2"/>
+      
+      <!-- 小齿轮齿 -->
+      <g>
+        <path d="M0,-50 L6,-47 L6,-43 L0,-40 L-6,-43 L-6,-47 Z" fill="#2196F3" transform="rotate(0)"/>
+        <path d="M0,-50 L6,-47 L6,-43 L0,-40 L-6,-43 L-6,-47 Z" fill="#2196F3" transform="rotate(30)"/>
+        <path d="M0,-50 L6,-47 L6,-43 L0,-40 L-6,-43 L-6,-47 Z" fill="#2196F3" transform="rotate(60)"/>
+        <path d="M0,-50 L6,-47 L6,-43 L0,-40 L-6,-43 L-6,-47 Z" fill="#2196F3" transform="rotate(90)"/>
+        <path d="M0,-50 L6,-47 L6,-43 L0,-40 L-6,-43 L-6,-47 Z" fill="#2196F3" transform="rotate(120)"/>
+        <path d="M0,-50 L6,-47 L6,-43 L0,-40 L-6,-43 L-6,-47 Z" fill="#2196F3" transform="rotate(150)"/>
+        <path d="M0,-50 L6,-47 L6,-43 L0,-40 L-6,-43 L-6,-47 Z" fill="#2196F3" transform="rotate(180)"/>
+        <path d="M0,-50 L6,-47 L6,-43 L0,-40 L-6,-43 L-6,-47 Z" fill="#2196F3" transform="rotate(210)"/>
+        <path d="M0,-50 L6,-47 L6,-43 L0,-40 L-6,-43 L-6,-47 Z" fill="#2196F3" transform="rotate(240)"/>
+        <path d="M0,-50 L6,-47 L6,-43 L0,-40 L-6,-43 L-6,-47 Z" fill="#2196F3" transform="rotate(270)"/>
+        <path d="M0,-50 L6,-47 L6,-43 L0,-40 L-6,-43 L-6,-47 Z" fill="#2196F3" transform="rotate(300)"/>
+        <path d="M0,-50 L6,-47 L6,-43 L0,-40 L-6,-43 L-6,-47 Z" fill="#2196F3" transform="rotate(330)"/>
+      </g>
+    </g>
+    
+    <!-- 中心圆点 -->
+    <circle cx="0" cy="0" r="15" fill="#BBDEFB" stroke="#1565C0" stroke-width="2"/>
+  </g>
+  
+  <!-- 机制图标和标签 -->
+  <!-- 游戏机制图标：行动力 -->
+  <g transform="translate(180, 120)" filter="url(#shadow)">
+    <circle cx="0" cy="0" r="40" fill="rgba(33,150,243,0.2)" stroke="#2196F3" stroke-width="2"/>
+    <path d="M-10,-15 L10,-15 L20,0 L10,15 L-10,15 L-20,0 Z" stroke="#2196F3" stroke-width="2" fill="none"/>
+    <path d="M-5,-5 L15,0 L-5,5 Z" fill="#2196F3"/>
+    <text x="0" y="35" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">行动力</text>
+  </g>
+  
+  <!-- 游戏机制图标：资源收集 -->
+  <g transform="translate(620, 120)" filter="url(#shadow)">
+    <circle cx="0" cy="0" r="40" fill="rgba(121,85,72,0.2)" stroke="#795548" stroke-width="2"/>
+    <rect x="-15" y="-15" width="10" height="10" fill="#A1887F"/>
+    <rect x="5" y="-15" width="10" height="10" fill="#8D6E63"/>
+    <rect x="-15" y="5" width="10" height="10" fill="#795548"/>
+    <rect x="5" y="5" width="10" height="10" fill="#5D4037"/>
+    <text x="0" y="35" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">资源收集</text>
+  </g>
+  
+  <!-- 游戏机制图标：成长系统 -->
+  <g transform="translate(180, 330)" filter="url(#shadow)">
+    <circle cx="0" cy="0" r="40" fill="rgba(76,175,80,0.2)" stroke="#4CAF50" stroke-width="2"/>
+    <path d="M-5,-20 L5,-20 L5,-5 L20,-5 L20,5 L5,5 L5,20 L-5,20 L-5,5 L-20,5 L-20,-5 L-5,-5 Z" fill="#4CAF50"/>
+    <text x="0" y="35" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">成长系统</text>
+  </g>
+  
+  <!-- 游戏机制图标：战斗策略 -->
+  <g transform="translate(620, 330)" filter="url(#shadow)">
+    <circle cx="0" cy="0" r="40" fill="rgba(244,67,54,0.2)" stroke="#F44336" stroke-width="2"/>
+    <path d="M-15,-10 L0,-25 L15,-10 L5,-10 L5,10 L25,10 L25,25 L-25,25 L-25,10 L-5,10 L-5,-10 Z" fill="#F44336"/>
+    <text x="0" y="35" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">战斗策略</text>
+  </g>
+  
+  <!-- 连接线 -->
+  <g stroke-dasharray="5,3" stroke="#90CAF9" stroke-width="1.5" opacity="0.8">
+    <path d="M180,120 L320,165 M620,120 L480,165 M180,330 L320,285 M620,330 L480,285"/>
+  </g>
+  
+  <!-- 文字 -->
+  <g fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="bold">
+    <text x="400" y="70" font-size="40" text-anchor="middle">游戏机制设计</text>
+    <text x="400" y="110" font-size="24" text-anchor="middle" fill="#BBDEFB">GAME MECHANICS</text>
+    <text x="400" y="400" font-size="18" text-anchor="middle" opacity="0.8">引擎驱动，玩法无限</text>
+  </g>
+</svg> 

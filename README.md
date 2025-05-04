@@ -6,7 +6,7 @@
 
 - `games.json`: 包含游戏数据的JSON文件
 - `html5games_crawler.py`: 用于爬取HTML5游戏数据的Python脚本
-- `tap4-ai-webui/`: Web前端子模块，基于Next.js构建
+- `tap4-web/`: Web前端，基于Next.js构建
 
 ## 功能特点
 
@@ -25,10 +25,10 @@ python html5games_crawler.py
 
 ### Web前端
 
-进入tap4-ai-webui目录，然后:
+进入tap4-web目录，然后:
 
 ```bash
-cd tap4-ai-webui
+cd tap4-web
 pnpm install
 pnpm dev
 ```

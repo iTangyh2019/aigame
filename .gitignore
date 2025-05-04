@@ -22,8 +22,6 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
 parts/
 sdist/
 var/
@@ -40,4 +38,7 @@ wheels/
 .env.local
 .env.development.local
 .env.test.local
-.env.production.local 
+.env.production.local
+
+# 允许tap4-ai-webui目录
+!tap4-ai-webui/ 

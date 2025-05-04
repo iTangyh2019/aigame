@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2C3E50"/>
+      <stop offset="100%" stop-color="#4A6572"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="800" height="450" fill="url(#bgGradient)"/>
+  
+  <!-- 图表网格 -->
+  <g opacity="0.1">
+    <path d="M0,50 L800,50" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M0,100 L800,100" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M0,150 L800,150" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M0,200 L800,200" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M0,250 L800,250" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M0,300 L800,300" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M0,350 L800,350" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M0,400 L800,400" stroke="#FFFFFF" stroke-width="1"/>
+    
+    <path d="M100,0 L100,450" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M200,0 L200,450" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M300,0 L300,450" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M400,0 L400,450" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M500,0 L500,450" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M600,0 L600,450" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M700,0 L700,450" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+  
+  <!-- 资源图标和图表 -->
+  <g transform="translate(400, 225)" filter="url(#glow)">
+    <!-- 中心圆环 -->
+    <circle cx="0" cy="0" r="120" fill="none" stroke="#FFD700" stroke-width="3" opacity="0.8"/>
+    <circle cx="0" cy="0" r="115" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.5"/>
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#FFD700" stroke-width="1" opacity="0.3"/>
+    
+    <!-- 资源图标 - 水 -->
+    <g transform="translate(-80, -80)">
+      <circle cx="0" cy="0" r="30" fill="#2980B9" opacity="0.8"/>
+      <path d="M0,-15 C-10,0 -10,15 0,20 C10,15 10,0 0,-15" fill="#FFFFFF" opacity="0.6"/>
+      <text x="0" y="35" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle">水资源</text>
+    </g>
+    
+    <!-- 资源图标 - 食物 -->
+    <g transform="translate(80, -80)">
+      <circle cx="0" cy="0" r="30" fill="#27AE60" opacity="0.8"/>
+      <path d="M-10,-10 L10,-10 L10,10 L-10,10 Z" fill="#FFFFFF" opacity="0.6"/>
+      <path d="M-5,-5 L5,-5 L5,5 L-5,5 Z" fill="#27AE60"/>
+      <text x="0" y="35" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle">食物</text>
+    </g>
+    
+    <!-- 资源图标 - 能源 -->
+    <g transform="translate(-80, 80)">
+      <circle cx="0" cy="0" r="30" fill="#F39C12" opacity="0.8"/>
+      <path d="M0,-15 L5,0 L0,5 L-5,0 Z" fill="#FFFFFF" opacity="0.6"/>
+      <path d="M-5,0 L0,15 L5,0" fill="#FFFFFF" opacity="0.6"/>
+      <text x="0" y="35" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle">能源</text>
+    </g>
+    
+    <!-- 资源图标 - 材料 -->
+    <g transform="translate(80, 80)">
+      <circle cx="0" cy="0" r="30" fill="#8E44AD" opacity="0.8"/>
+      <path d="M-10,-10 L10,-10 L0,10 Z" fill="#FFFFFF" opacity="0.6"/>
+      <text x="0" y="35" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle">材料</text>
+    </g>
+    
+    <!-- 连接线 -->
+    <path d="M-80,-80 L80,-80 L80,80 L-80,80 Z" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.5"/>
+    <path d="M-80,-80 L80,80 M80,-80 L-80,80" fill="none" stroke="#FFD700" stroke-width="2" opacity="0.5"/>
+    
+    <!-- 中心图标 -->
+    <circle cx="0" cy="0" r="40" fill="#E74C3C" opacity="0.9"/>
+    <g transform="translate(0, 0) scale(0.7)">
+      <path d="M-25,0 A25,25 0 0,1 25,0 A25,25 0 0,1 -25,0" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+      <path d="M0,-25 L0,25 M-25,0 L25,0" stroke="#FFFFFF" stroke-width="3"/>
+    </g>
+    
+    <!-- 图表曲线 -->
+    <path d="M-150,50 C-100,20 -50,40 0,-10 C50,-60 100,-30 150,10" fill="none" stroke="#FFD700" stroke-width="3" opacity="0.7"/>
+  </g>
+  
+  <!-- 文字 -->
+  <g fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="bold">
+    <text x="400" y="70" font-size="40" text-anchor="middle">资源管理策略指南</text>
+    <text x="400" y="115" font-size="24" text-anchor="middle" fill="#FFD700">RESOURCE MANAGEMENT MASTERY</text>
+    <text x="400" y="380" font-size="18" text-anchor="middle" opacity="0.8">平衡发展：优化你的游戏资源配置</text>
+  </g>
+</svg> 

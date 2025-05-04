@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景渐变 -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#151C2E"/>
+      <stop offset="100%" stop-color="#2E3A5C"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+  <rect width="800" height="450" fill="url(#bgGradient)" rx="10" ry="10"/>
+  
+  <!-- 解谜元素装饰 -->
+  <g transform="translate(400, 225)">
+    <!-- 背景图案 -->
+    <g opacity="0.15">
+      <rect x="-350" y="-170" width="60" height="60" rx="5" fill="#FFFFFF"/>
+      <rect x="-270" y="-120" width="40" height="40" rx="5" fill="#FFFFFF"/>
+      <rect x="-350" y="-90" width="40" height="40" rx="5" fill="#FFFFFF"/>
+      <rect x="-290" y="-50" width="30" height="30" rx="5" fill="#FFFFFF"/>
+      <rect x="-330" y="10" width="50" height="50" rx="5" fill="#FFFFFF"/>
+      <rect x="-270" y="70" width="35" height="35" rx="5" fill="#FFFFFF"/>
+      <rect x="-350" y="100" width="45" height="45" rx="5" fill="#FFFFFF"/>
+      
+      <rect x="290" y="-170" width="60" height="60" rx="5" fill="#FFFFFF"/>
+      <rect x="230" y="-120" width="40" height="40" rx="5" fill="#FFFFFF"/>
+      <rect x="310" y="-90" width="40" height="40" rx="5" fill="#FFFFFF"/>
+      <rect x="260" y="-50" width="30" height="30" rx="5" fill="#FFFFFF"/>
+      <rect x="280" y="10" width="50" height="50" rx="5" fill="#FFFFFF"/>
+      <rect x="235" y="70" width="35" height="35" rx="5" fill="#FFFFFF"/>
+      <rect x="305" y="100" width="45" height="45" rx="5" fill="#FFFFFF"/>
+    </g>
+    
+    <!-- 中心迷宫图形 -->
+    <g filter="url(#glow)">
+      <!-- 主轮廓 -->
+      <rect x="-120" y="-120" width="240" height="240" rx="15" fill="none" stroke="#8A63FF" stroke-width="3"/>
+      
+      <!-- 迷宫内部 -->
+      <path d="M-120,-40 L-40,-40 L-40,-120" fill="none" stroke="#8A63FF" stroke-width="3"/>
+      <path d="M-40,0 L-80,0 L-80,40 L0,40 L0,80 L-40,80 L-40,120" fill="none" stroke="#8A63FF" stroke-width="3"/>
+      <path d="M40,-120 L40,-80 L80,-80 L80,-40 L40,-40 L40,0 L80,0 L80,40 L40,40 L40,120" fill="none" stroke="#8A63FF" stroke-width="3"/>
+      <path d="M-120,80 L-80,80 L-80,120" fill="none" stroke="#8A63FF" stroke-width="3"/>
+      <path d="M120,-80 L80,-80" fill="none" stroke="#8A63FF" stroke-width="3"/>
+      <path d="M120,80 L80,80" fill="none" stroke="#8A63FF" stroke-width="3"/>
+      
+      <!-- 中心宝石 -->
+      <circle cx="0" cy="0" r="25" fill="#38B6FF"/>
+      <circle cx="0" cy="0" r="18" fill="#5D4FFF"/>
+      <circle cx="0" cy="0" r="12" fill="#8A63FF"/>
+      <circle cx="0" cy="0" r="6" fill="#FFFFFF"/>
+    </g>
+    
+    <!-- 拼图元素 -->
+    <g transform="translate(-150, -150)" fill="#5D4FFF" opacity="0.7">
+      <path d="M0,0 L30,0 L30,10 C35,10 40,15 40,20 C40,25 35,30 30,30 L30,40 L0,40 L0,30 C-5,30 -10,25 -10,20 C-10,15 -5,10 0,10 Z"/>
+    </g>
+    <g transform="translate(150, -150)" fill="#38B6FF" opacity="0.7">
+      <path d="M0,0 L30,0 L30,10 C35,10 40,15 40,20 C40,25 35,30 30,30 L30,40 L0,40 L0,30 C-5,30 -10,25 -10,20 C-10,15 -5,10 0,10 Z"/>
+    </g>
+    <g transform="translate(-150, 150)" fill="#38B6FF" opacity="0.7">
+      <path d="M0,0 L30,0 L30,10 C35,10 40,15 40,20 C40,25 35,30 30,30 L30,40 L0,40 L0,30 C-5,30 -10,25 -10,20 C-10,15 -5,10 0,10 Z"/>
+    </g>
+    <g transform="translate(150, 150)" fill="#5D4FFF" opacity="0.7">
+      <path d="M0,0 L30,0 L30,10 C35,10 40,15 40,20 C40,25 35,30 30,30 L30,40 L0,40 L0,30 C-5,30 -10,25 -10,20 C-10,15 -5,10 0,10 Z"/>
+    </g>
+  </g>
+  
+  <!-- 文字 -->
+  <g fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="bold">
+    <text x="400" y="70" font-size="38" text-anchor="middle" fill="#38B6FF">BEGINNER'S GUIDE TO</text>
+    <text x="400" y="120" font-size="50" text-anchor="middle">PUZZLE GAMES</text>
+    <text x="400" y="380" font-size="22" text-anchor="middle" opacity="0.8" fill="#AAAAAA">Master Problem-Solving Skills Through Gaming</text>
+  </g>
+</svg> 

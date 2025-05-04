@@ -1,0 +1,19 @@
+# Survivor Game Online
+# robots.txt file
+
+User-agent: *
+Allow: /
+
+# 允许所有搜索引擎爬取的主要内容路径
+Allow: /blog/
+Allow: /games/
+Allow: /games/tag/
+Allow: /games/play/
+
+# 禁止爬取的路径
+Disallow: /api/
+Disallow: /_next/
+Disallow: /*?_rsc=
+
+# 网站地图
+Sitemap: https://survivorgame.online/sitemap.xml
